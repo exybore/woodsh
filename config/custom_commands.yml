@@ -1,0 +1,7 @@
+# Woodsh - Custom commands
+
+commit:
+  usage: commit
+  commands:
+    - git add *
+    - git commit

@@ -1,0 +1,4 @@
+# Woodsh - Theme configuration
+
+format: '{user}@{sys} {dir} ->'
+motd: 'Woodsh - A little Ruby shell'
