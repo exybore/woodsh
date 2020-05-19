@@ -11,6 +11,7 @@ module Woodsh
       }
       formated = Woodsh::CONFIG.theme['format']
       formats.each do |key, value|
+        next if value.nil?
         formated = formated.gsub(/{#{key}}/, value)
       end
       formated + ' '
