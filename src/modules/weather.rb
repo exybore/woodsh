@@ -14,7 +14,7 @@ module Woodsh
         rescue OpenWeatherMap::Exceptions::UnknownLocation
           puts 'Error while getting weather data : unknown location'
         rescue OpenWeatherMap::Exceptions::Unauthorized
-          puts "Error while getting weather data : you're not allowed to interact with the OpenWeatherMap API. Check your API key"
+          puts "Error while getting weather data : you're not allowed to interact with the OpenWeatherMap API. Check your API key in the config/data.yml file."
         else
           puts "#{data.weather_conditions.emoji}  #{data.city.name}, #{data.city.country} : #{data.weather_conditions.description}"
         end
